@@ -1,0 +1,152 @@
+<div class="container mt-4">
+    <table id="example" class="display" style="width:100%">
+        <thead style="background-color: #3366CC; color: white;">
+            <tr>
+                <th  style="color:white; padding-right: 1rem;">ID solicitud</th>
+                <th  style="color:white; padding-right: 1rem;">trayecto</th>
+                <th  style="color:white; padding-right: 1rem;">Origen</th>
+                <th  style="color:white; padding-right: 1rem;">Destino</th>
+                <th  style="color:white; padding-right: 1rem;">Hora salida</th>
+                <th  style="color:white; padding-right: 1rem;">Hora llegada</th>
+                <th  style="color:white; padding-right: 1rem;">Fecha servicio</th>
+                <th  style="color:white; padding-right: 1rem;">Fecha solicitud</th>
+                <th  style="color:white; padding-right: 1rem;">estado solicitud</th>
+                <th  style="color:white; padding-right: 1rem;">Accion</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td >Tiger Nixon</td>
+                <td>System Architect</td>
+                <td>Edinburgh</td>
+                <td>61</td>
+                <td>2011/04/25</td>
+                <td>$320,800</td>
+                <td>61</td>
+                <td>2011/04/25</td>
+                <td>$320,800</td>
+                <td *ngIf="roles.name == 'referente'"> 
+                    <a class="nav-link" routerLink="/ajuste-solicitud" (click)="send()"> Editar </a>
+                </td>
+                <td *ngIf="roles.name == 'directivo'"> 
+                    <div class="row">
+                        <!-- <div class="col-4">
+                            <a class="nav-link" routerLink="/novedad"> Novedad</a>
+                        </div> -->
+                        <div class="col-4">
+                            <a class="nav-link" routerLink="/aprobacion-directivos" (click)="send()"> Gestionar </a>
+                        </div>
+                        <!-- <div class="col-4">
+                            <a class="nav-link" routerLink="/cancelacion"> Cancelación</a>
+                        </div> -->
+                    </div>
+                </td>
+                <td *ngIf="roles.name == 'conductor'"> 
+                    <a class="nav-link" routerLink="/encuesta"> Encuesta </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Garrett Winters</td>
+                <td>Accountant</td>
+                <td>Tokyo</td>
+                <td>61</td>
+                <td>2011/04/25</td>
+                <td>$320,800</td>
+                <td>63</td>
+                <td>2011/07/25</td>
+                <td>$170,750</td>
+                <td *ngIf="roles.name == 'referente'"> 
+                    <a class="nav-link" routerLink="/ajuste-solicitud" (click)="send()"> Editar </a>
+                </td>
+                <td *ngIf="roles.name == 'directivo'"> 
+                    <div class="row">
+                        <!-- <div class="col-4">
+                            <a class="nav-link" routerLink="/novedad"> Novedad</a>
+                        </div> -->
+                        <div class="col-4">
+                            <a class="nav-link" routerLink="/aprobacion-directivos" (click)="send()"> Gestionar </a>
+                        </div>
+                        <!-- <div class="col-4">
+                            <a class="nav-link" routerLink="/cancelacion"> Cancelación</a>
+                        </div> -->
+                    </div>
+                </td>
+                <td *ngIf="roles.name == 'conductor'"> 
+                    <a class="nav-link" routerLink="/encuesta"> Encuesta </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Ashton Cox</td>
+                <td>Junior Technical Author</td>
+                <td>San Francisco</td>
+                <td>61</td>
+                <td>2011/04/25</td>
+                <td>$320,800</td>
+                <td>66</td>
+                <td>2009/01/12</td>
+                <td>$86,000</td>
+                <td *ngIf="roles.name == 'referente'"> 
+                    <a class="nav-link" routerLink="/ajuste-solicitud" (click)="send()"> Editar </a>
+                </td>
+                <td *ngIf="roles.name == 'directivo'"> 
+                    <div class="row">
+                        <!-- <div class="col-4">
+                            <a class="nav-link" routerLink="/novedad"> Novedad</a>
+                        </div> -->
+                        <div class="col-4">
+                            <a class="nav-link" routerLink="/aprobacion-directivos" (click)="send()"> Gestionar </a>
+                        </div>
+                        <!-- <div class="col-4">
+                            <a class="nav-link" routerLink="/cancelacion"> Cancelación</a>
+                        </div> -->
+                    </div>
+                </td>
+                <td *ngIf="roles.name == 'conductor'"> 
+                    <a class="nav-link" routerLink="/encuesta"> Encuesta </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Cedric Kelly</td>
+                <td>Senior Javascript Developer</td>
+                <td>Edinburgh</td>
+                <td>22</td>
+                <td>61</td>
+                <td>2011/04/25</td>
+                <td>$320,800</td>
+                <td>2012/03/29</td>
+                <td>$433,060</td>
+                <td *ngIf="roles.name == 'referente'"> 
+                    <a class="nav-link" routerLink="/ajuste-solicitud" (click)="send()"> Editar </a>
+                </td>
+                <td *ngIf="roles.name == 'directivo'"> 
+                    <div class="row">
+                        <!-- <div class="col-4">
+                            <a class="nav-link" routerLink="/novedad"> Novedad</a>
+                        </div> -->
+                        <div class="col-4">
+                            <a class="nav-link" routerLink="/aprobacion-directivos" (click)="send()"> Gestionar </a>
+                        </div>
+                        <!-- <div class="col-4">
+                            <a class="nav-link" routerLink="/cancelacion"> Cancelación</a>
+                        </div> -->
+                    </div>
+                </td>
+                <td *ngIf="roles.name == 'conductor'"> 
+                     <a class="nav-link" routerLink="/encuesta"> Encuesta </a>
+                </td>
+        </tbody>
+        <tfoot>
+            <!-- <tr style="background-color: #3366CC;">
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Age</th>
+                <th>Start date</th>
+                <th>Salary</th>
+            </tr> -->
+        </tfoot>
+    </table>
+
+
+
+</div>
